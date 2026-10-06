@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Transcended — Under development</title>
-<meta name="description" content="Transcended is under development. Check back soon.">
+<title>Transcended — Under development or for sale</title>
+<meta name="description" content="Transcended is under development, and the domain may be for sale.">
 <meta name="robots" content="noindex">
 <style>
   :root { --bg: #f6f5f2; --fg: #1c1c1a; --muted: #6b6a66; --line: #d9d7d1; --accent: #b4541f; }
@@ -28,6 +28,15 @@
   @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
   h1 { font-size: clamp(40px, 9vw, 68px); font-weight: 400; line-height: 1.05; margin: 20px 0 16px; overflow-wrap: anywhere; }
   p { font-size: 18px; line-height: 1.55; color: var(--muted); margin: 0; }
+  .def { margin: 0 0 28px; padding: 0 0 28px; border-bottom: 1px solid var(--line); }
+  .def .word { font-size: 17px; color: var(--fg); }
+  .def .word span { color: var(--muted); font-style: normal; margin-left: 8px; font-size: 15px; }
+  .def .pos { font-family: Consolas, "Courier New", monospace; font-size: 12px; color: var(--muted); margin: 6px 0 10px; }
+  .def .pos em { font-style: italic; }
+  .def .meaning { font-size: 19px; line-height: 1.5; color: var(--fg); margin: 0 0 8px; }
+  .def .origin { font-size: 15px; }
+  .sale { margin-top: 14px; }
+  .sale strong { color: var(--fg); font-weight: 400; border-bottom: 1px solid var(--accent); }
   footer {
     max-width: 560px; width: 100%; margin: 0 auto; padding-top: 16px; border-top: 1px solid var(--line);
     font-family: Consolas, "Courier New", monospace; font-size: 12px; color: var(--muted);
@@ -36,9 +45,16 @@
 </head>
 <body>
 <main>
-  <div class="status"><span class="dot"></span>Under development</div>
+  <div class="status"><span class="dot"></span>Under development &middot; or for sale</div>
   <h1>Transcended</h1>
-  <p>This site is being built. Please check back soon.</p>
+  <div class="def">
+    <div class="word">tran·scend·ed<span>/tran-SEN-did/</span></div>
+    <div class="pos">verb, past tense of <em>transcend</em></div>
+    <p class="meaning">Gone beyond the usual limits of something; risen above or surpassed it.</p>
+    <p class="origin">From Latin <em>transcendere</em>, &ldquo;to climb over or beyond.&rdquo;</p>
+  </div>
+  <p>This site is under development. Please check back soon.</p>
+  <p class="sale">The domain <strong>transcended.si</strong> may also be for sale.</p>
 </main>
 <footer>transcended.si</footer>
 </body>
