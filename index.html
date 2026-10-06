@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transcended — Under development</title>
+<meta name="description" content="Transcended is under development. Check back soon.">
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg: #f6f5f2; --fg: #1c1c1a; --muted: #6b6a66; --line: #d9d7d1; --accent: #b4541f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141413; --fg: #efeee9; --muted: #9a9892; --line: #2e2d2a; --accent: #e08a55; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex; flex-direction: column; padding: 24px;
+  }
+  main { flex: 1; display: flex; flex-direction: column; justify-content: center; max-width: 560px; width: 100%; margin: 0 auto; }
+  .status {
+    font-family: Consolas, "Courier New", monospace; font-size: 13px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 10px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+  @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+  h1 { font-size: clamp(40px, 9vw, 68px); font-weight: 400; line-height: 1.05; margin: 20px 0 16px; overflow-wrap: anywhere; }
+  p { font-size: 18px; line-height: 1.55; color: var(--muted); margin: 0; }
+  footer {
+    max-width: 560px; width: 100%; margin: 0 auto; padding-top: 16px; border-top: 1px solid var(--line);
+    font-family: Consolas, "Courier New", monospace; font-size: 12px; color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="status"><span class="dot"></span>Under development</div>
+  <h1>Transcended</h1>
+  <p>This site is being built. Please check back soon.</p>
+</main>
+<footer>transcended.si</footer>
+</body>
+</html>
